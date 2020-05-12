@@ -24,9 +24,3 @@ func (c *Client) Run() {
 	c.conn.Read(msg)
 	fmt.Println(string(msg))
 }
-
-func (c *Client) readMessage() {
-	msg := make([]byte, 1024)
-	c.conn.Read(msg)
-	fmt.Println(string(msg))
-}
